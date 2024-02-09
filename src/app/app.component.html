@@ -227,6 +227,47 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+
+
+<li>me</li>
+@switch (x) {
+  @case (1) {value is 1}
+  @case (2) { value is 2}
+  @default {value is not 1,2}
+}
+<div>
+  @for (user of users; track user.id) {
+    {{ user.name }}
+  } @empty {
+    Empty list of users
+  }
+</div>
+
+
+@if (x>5) {
+  <div>x is greater than 5 </div>
+} @else {
+<div>x is less than 5 </div>
+}
+<div>
+  @defer (on viewport) {
+    <div>example code</div>
+  } @loading {
+    Loading…
+  } @error {
+    Loading failed :
+  } @placeholder {
+    <div>sample</div>
+  }
+  
+</div>
+<div id="myElement">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati dolorem modi est sunt nostrum atque accusamus pariatur, veniam quaerat facere.
+</div>
+hii
+<img ngSrc="https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg" width="600" height="400" alt="img"  priority>
+<div><link rel="preconnect" href="https://my.cdn.origin"></div>
+
    </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
